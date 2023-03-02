@@ -51,3 +51,17 @@ CONFIG_PACKAGE_luci-app-ramfree=y
 ## License
 
 [MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © [**P3TERX**](https://p3terx.com)
+
+
+
+## 55
+$ vim ./package/lean/default-settings/files/zzz-default-settings    # 打开要编辑的文件
+
+uci set network.lan.ipaddr='192.168.1.254'   # 默认 IP 地址
+uci set network.lan.proto='static'   # 静态 IP
+uci set network.lan.type='bridge'   # 接口类型：桥接
+uci set network.lan.ifname='eth0'   # 网络端口：默认 eth0，第一个接口
+uci set network.lan.netmask='255.255.255.0' # 子网掩码
+uci set network.lan.gateway='192.168.1.1'   # 默认网关地址（主路由 IP）
+uci set network.lan.dns='192.168.1.1'  # 默认上游 DNS 地址
+uci commit network
