@@ -32,20 +32,6 @@ CONFIG_PACKAGE_luci-theme-argon=m 选中仅编译ipk插件是这种
 # CONFIG_PACKAGE_luci-theme-argon is not set 未选中是这种
 ## Credits
 
-CONFIG_PACKAGE_luci-app-accesscontrol=y
-CONFIG_PACKAGE_luci-app-ttyd=y
-CONFIG_PACKAGE_luci-app-wifischedule=y
-CONFIG_PACKAGE_luci-app-aliyundrive-webdav=y
-CONFIG_PACKAGE_luci-app-airplay2=y
-CONFIG_PACKAGE_luci-app-baidupcs-web=y
-CONFIG_PACKAGE_luci-app-easymesh=y
-CONFIG_PACKAGE_luci-app-serverchan=y
-CONFIG_PACKAGE_luci-app-shairplay=y
-CONFIG_PACKAGE_luci-app-statistics=y
-CONFIG_PACKAGE_luci-app-vlmcsd=y
-CONFIG_PACKAGE_luci-app-wrtbwmon=y
-CONFIG_PACKAGE_luci-app-pushbot=y
-CONFIG_PACKAGE_luci-app-ramfree=y
 
 
 ## License
