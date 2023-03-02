@@ -19,9 +19,17 @@ A template for building OpenWrt with GitHub Actions
 
 ## Tips
 
-- It may take a long time to create a `.config` file and build the OpenWrt firmware. Thus, before create repository to build your own firmware, you may check out if others have already built it which meet your needs by simply [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
-- Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
+该文件对应本地编译执行make menuconfig后生成的.config文件。
 
+该文件主要包含luci应用，流程中会自动转为完整的.config。
+
+增减插件修改这个文件即可，以argon主题为例，格式如下：
+
+CONFIG_PACKAGE_luci-theme-argon=y 选中编译进固件的是这种
+
+CONFIG_PACKAGE_luci-theme-argon=m 选中仅编译ipk插件是这种
+
+# CONFIG_PACKAGE_luci-theme-argon is not set 未选中是这种
 ## Credits
 
 CONFIG_PACKAGE_luci-app-accesscontrol=y
