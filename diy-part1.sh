@@ -50,7 +50,7 @@ echo 'src-git argon_armygreen https://github.com/uparrows/luci-theme-argon_armyg
 # echo 'src-git unblockneteasemusic https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git' >>feeds.conf.default
 
 
-
+# echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.default  应用过滤
 
 # 修改自带主题，删除原主题包
 rm -rf package/lean/luci-theme-argon
