@@ -30,7 +30,7 @@ echo 'src-git bypass https://github.com/tianiue/luci-app-bypass.git' >>feeds.con
 
 #echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 #echo 'src-git cloudflared https://github.com/yichya/openwrt-cloudflared.git' >>feeds.conf.default
-#echo 'src-git cloudflared https://github.com/kiddin9/openwrt-packages/tree/master/openwrt-cloudflared' >>feeds.conf.default 
+echo 'src-git cloudflared https://github.com/kiddin9/openwrt-packages/tree/master/openwrt-cloudflared' >>./feeds/cloudflared
 echo 'src-git wifidog https://github.com/liudf0716/apfree_wifidog.git' >>feeds.conf.default
 #https://github.com/wifidog/packages、https://github.com/brcm/openwrt-wifidog-luci-server
 
@@ -39,9 +39,10 @@ echo 'src-git wifidog https://github.com/liudf0716/apfree_wifidog.git' >>feeds.c
 # echo 'src-git app-store https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-store' >>feeds.conf.default 
 # echo 'src-git app-advanced https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-advanced' >>feeds.conf.default 
 # echo 'src-git openssl https://github.com/kiddin9/openwrt-packages/tree/master/openssl' >>feeds.conf.default 
-# echo 'src-git neobird https://github.com/thinktip/luci-theme-neobird' >>feeds.conf.default
+echo 'src-git neobird https://github.com/thinktip/luci-theme-neobird' >>./feeds/neobird
 # echo 'src-git argon_armygreen https://github.com/XXKDB/luci-theme-argon_armygreen' >>feeds.conf.default
-echo 'src-git argon_armygreen https://github.com/uparrows/luci-theme-argon_armygreen' >>feeds.conf.default 
+echo 'src-git argon_armygreen https://github.com/uparrows/luci-theme-argon_armygreen' >>./feeds/argon_armygreen
+sed -i 's#cp ./feeds/argon_armygreen/lede.files-packageinfo.mk' /workdir/openwrt/feeds/argon_armygreen.tmp/info
 #https://github.com/Joecaicai/luci-theme-argon_armygreen、https://github.com/chenlunTian/luci-theme-argon_armygreen、https://github.com/sansun888/luci-theme-neobird
 # echo 'src-git bypass https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-bypass' >>feeds.conf.default 
 # echo 'src-git netspeedtest https://github.com/sirpdboy/netspeedtest/tree/master/luci-app-netspeedtest' >>feeds.conf.default 
@@ -56,14 +57,13 @@ echo 'src-git argon_armygreen https://github.com/uparrows/luci-theme-argon_armyg
 rm -rf package/lean/luci-theme-argon
 
 # 添加新的主题包 # Add luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+# git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 # argon 的设置
-git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git  package/diy/luci-app-argon-config
+# git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git  package/diy/luci-app-argon-config
 
 #主题列表
 #echo 'src-git Fuyuko https://github.com/Lancet-z/luci-theme-Fuyuko.git' >>feeds.conf.default
 #echo 'src-git idol https://github.com/Lancet-z/luci-theme-idol.git' >>feeds.conf.default
 #echo 'src-git Valkyrie https://github.com/Lancet-z/luci-theme-Valkyrie.git' >>feeds.conf.default
-echo 'src-git Rinze https://github.com/Lancet-z/luci-theme-Rinze.git' >>feeds.conf.default
 
