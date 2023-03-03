@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
-#sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 # 添加旁路由防火墙
 # echo "iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE" >> package/network/config/firewall/files/firewall.user
@@ -30,33 +30,32 @@ echo 'src-git bypass https://github.com/tianiue/luci-app-bypass.git' >>feeds.con
 
 #echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 
-#echo 'src-git cloudflared https://github.com/yichya/openwrt-cloudflared.git' >>feeds.conf.default
-# echo 'src-git cloudflared https://github.com/kiddin9/openwrt-packages/tree/master/openwrt-cloudflared' >>./feeds/cloudflared
+
 # echo 'src-git wifidog https://github.com/liudf0716/apfree_wifidog.git' >>feeds.conf.default
 
 #https://github.com/wifidog/packages、https://github.com/brcm/openwrt-wifidog-luci-server
 
-
+# 修改自带主题，删除原主题包
+rm -rf package/lean/luci-theme-argon
 
 # echo 'src-git app-store https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-store' >>feeds.conf.default 
 # echo 'src-git app-advanced https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-advanced' >>feeds.conf.default 
 # echo 'src-git openssl https://github.com/kiddin9/openwrt-packages/tree/master/openssl' >>feeds.conf.default 
 # echo 'src-git neobird https://github.com/thinktip/luci-theme-neobird' >>feeds.conf.default
 # echo 'src-git argon_armygreen https://github.com/XXKDB/luci-theme-argon_armygreen' >>feeds.conf.default
-echo 'src-git argon_armygreen https://github.com/chenlunTian/luci-theme-argon_armygreen' >>feeds.conf.default
+echo 'src-git neobird https://github.com/sansun888/luci-theme-neobird' >>feeds.conf.default
 # sed -i 's#cp ./feeds/argon_armygreen/lede.files-packageinfo.mk' /workdir/openwrt/feeds/argon_armygreen.tmp/info
-#https://github.com/chenlunTian/luci-theme-argon_armygreen、https://github.com/sansun888/luci-theme-neobird
+#https://github.com/sansun888/luci-theme-neobird
 # echo 'src-git bypass https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-bypass' >>feeds.conf.default 
 # echo 'src-git netspeedtest https://github.com/sirpdboy/netspeedtest/tree/master/luci-app-netspeedtest' >>feeds.conf.default 
 # echo 'src-git autotimeset https://github.com/sirpdboy/luci-app-autotimeset' >>feeds.conf.default 
 # echo 'src-git unblockneteasemusic https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-unblockneteasemusic' >>feeds.conf.default
 # echo 'src-git unblockneteasemusic https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git' >>feeds.conf.default
 
-# echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.default
+echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.default
 # echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.default  应用过滤
 
-# 修改自带主题，删除原主题包
-rm -rf package/lean/luci-theme-argon
+
 
 # 添加新的主题包 # Add luci-theme-argon
 # git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
