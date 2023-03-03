@@ -33,7 +33,7 @@ echo 'src-git bypass https://github.com/tianiue/luci-app-bypass.git' >>feeds.con
 #echo 'src-git cloudflared https://github.com/yichya/openwrt-cloudflared.git' >>feeds.conf.default
 # echo 'src-git cloudflared https://github.com/kiddin9/openwrt-packages/tree/master/openwrt-cloudflared' >>./feeds/cloudflared
 # echo 'src-git wifidog https://github.com/liudf0716/apfree_wifidog.git' >>feeds.conf.default
-echo 'src-git wifidog https://github.com/281677160/openwrt-package/tree/master/wifidog-wiwiz' >>feeds.conf.default
+
 #https://github.com/wifidog/packages、https://github.com/brcm/openwrt-wifidog-luci-server
 
 
@@ -43,9 +43,9 @@ echo 'src-git wifidog https://github.com/281677160/openwrt-package/tree/master/w
 # echo 'src-git openssl https://github.com/kiddin9/openwrt-packages/tree/master/openssl' >>feeds.conf.default 
 # echo 'src-git neobird https://github.com/thinktip/luci-theme-neobird' >>feeds.conf.default
 # echo 'src-git argon_armygreen https://github.com/XXKDB/luci-theme-argon_armygreen' >>feeds.conf.default
-echo 'src-git argon_armygreen https://github.com/Joecaicai/luci-theme-argon_armygreen' >>feeds.conf.default
+echo 'src-git argon_armygreen https://github.com/chenlunTian/luci-theme-argon_armygreen' >>feeds.conf.default
 # sed -i 's#cp ./feeds/argon_armygreen/lede.files-packageinfo.mk' /workdir/openwrt/feeds/argon_armygreen.tmp/info
-#https://github.com/Joecaicai/luci-theme-argon_armygreen、https://github.com/chenlunTian/luci-theme-argon_armygreen、https://github.com/sansun888/luci-theme-neobird
+#https://github.com/chenlunTian/luci-theme-argon_armygreen、https://github.com/sansun888/luci-theme-neobird
 # echo 'src-git bypass https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-bypass' >>feeds.conf.default 
 # echo 'src-git netspeedtest https://github.com/sirpdboy/netspeedtest/tree/master/luci-app-netspeedtest' >>feeds.conf.default 
 # echo 'src-git autotimeset https://github.com/sirpdboy/luci-app-autotimeset' >>feeds.conf.default 
