@@ -26,8 +26,9 @@ echo 'src-git wifidog https://github.com/liudf0716/apfree_wifidog.git' >>feeds.c
 # echo 'src-git app-store https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-store' >>feeds.conf.default 
 # echo 'src-git app-advanced https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-advanced' >>feeds.conf.default 
 # echo 'src-git openssl https://github.com/kiddin9/openwrt-packages/tree/master/openssl' >>feeds.conf.default 
-echo 'src-git neobird https://github.com/thinktip/luci-theme-neobird' >>feeds.conf.default 
-echo 'src-git argon_armygreen https://github.com/XXKDB/luci-theme-argon_armygreen' >>feeds.conf.default 
+# echo 'src-git neobird https://github.com/thinktip/luci-theme-neobird' >>feeds.conf.default
+# echo 'src-git argon_armygreen https://github.com/XXKDB/luci-theme-argon_armygreen' >>feeds.conf.default
+echo 'src-git argon_armygreen https://github.com/uparrows/luci-theme-argon_armygreen' >>feeds.conf.default 
 # echo 'src-git bypass https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-bypass' >>feeds.conf.default 
 # echo 'src-git netspeedtest https://github.com/sirpdboy/netspeedtest/tree/master/luci-app-netspeedtest' >>feeds.conf.default 
 # echo 'src-git autotimeset https://github.com/sirpdboy/luci-app-autotimeset' >>feeds.conf.default 
