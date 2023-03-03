@@ -29,28 +29,30 @@ echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;lu
 echo 'src-git bypass https://github.com/tianiue/luci-app-bypass.git' >>feeds.conf.default
 
 #echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
+
 #echo 'src-git cloudflared https://github.com/yichya/openwrt-cloudflared.git' >>feeds.conf.default
-echo 'src-git cloudflared https://github.com/kiddin9/openwrt-packages/tree/master/openwrt-cloudflared' >>./feeds/cloudflared
-echo 'src-git wifidog https://github.com/liudf0716/apfree_wifidog.git' >>feeds.conf.default
+# echo 'src-git cloudflared https://github.com/kiddin9/openwrt-packages/tree/master/openwrt-cloudflared' >>./feeds/cloudflared
+# echo 'src-git wifidog https://github.com/liudf0716/apfree_wifidog.git' >>feeds.conf.default
+echo 'src-git wifidog https://github.com/281677160/openwrt-package/tree/master/wifidog-wiwiz' >>feeds.conf.default
 #https://github.com/wifidog/packages、https://github.com/brcm/openwrt-wifidog-luci-server
 
-# https://github.com/281677160/openwrt-package/tree/master/wifidog-wiwiz
+
 
 # echo 'src-git app-store https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-store' >>feeds.conf.default 
 # echo 'src-git app-advanced https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-advanced' >>feeds.conf.default 
 # echo 'src-git openssl https://github.com/kiddin9/openwrt-packages/tree/master/openssl' >>feeds.conf.default 
-echo 'src-git neobird https://github.com/thinktip/luci-theme-neobird' >>./feeds/neobird
+echo 'src-git neobird https://github.com/thinktip/luci-theme-neobird' >>feeds.conf.default
 # echo 'src-git argon_armygreen https://github.com/XXKDB/luci-theme-argon_armygreen' >>feeds.conf.default
-echo 'src-git argon_armygreen https://github.com/uparrows/luci-theme-argon_armygreen' >>./feeds/argon_armygreen
-sed -i 's#cp ./feeds/argon_armygreen/lede.files-packageinfo.mk' /workdir/openwrt/feeds/argon_armygreen.tmp/info
+echo 'src-git argon_armygreen https://github.com/Joecaicai/luci-theme-argon_armygreen' >>feeds.conf.default
+# sed -i 's#cp ./feeds/argon_armygreen/lede.files-packageinfo.mk' /workdir/openwrt/feeds/argon_armygreen.tmp/info
 #https://github.com/Joecaicai/luci-theme-argon_armygreen、https://github.com/chenlunTian/luci-theme-argon_armygreen、https://github.com/sansun888/luci-theme-neobird
 # echo 'src-git bypass https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-bypass' >>feeds.conf.default 
 # echo 'src-git netspeedtest https://github.com/sirpdboy/netspeedtest/tree/master/luci-app-netspeedtest' >>feeds.conf.default 
 # echo 'src-git autotimeset https://github.com/sirpdboy/luci-app-autotimeset' >>feeds.conf.default 
-# echo 'src-git unblockneteasemusic https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-unblockneteasemusic' >>feeds.conf.default
+echo 'src-git unblockneteasemusic https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-unblockneteasemusic' >>feeds.conf.default
 # echo 'src-git unblockneteasemusic https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git' >>feeds.conf.default
 
-
+echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.default
 # echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.default  应用过滤
 
 # 修改自带主题，删除原主题包
@@ -63,7 +65,7 @@ rm -rf package/lean/luci-theme-argon
 # git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git  package/diy/luci-app-argon-config
 
 #主题列表
-#echo 'src-git Fuyuko https://github.com/Lancet-z/luci-theme-Fuyuko.git' >>feeds.conf.default
-#echo 'src-git idol https://github.com/Lancet-z/luci-theme-idol.git' >>feeds.conf.default
-#echo 'src-git Valkyrie https://github.com/Lancet-z/luci-theme-Valkyrie.git' >>feeds.conf.default
+echo 'src-git Fuyuko https://github.com/Lancet-z/luci-theme-Fuyuko.git' >>feeds.conf.default
+echo 'src-git idol https://github.com/Lancet-z/luci-theme-idol.git' >>feeds.conf.default
+echo 'src-git Valkyrie https://github.com/Lancet-z/luci-theme-Valkyrie.git' >>feeds.conf.default
 
