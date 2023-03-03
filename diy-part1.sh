@@ -52,7 +52,7 @@ echo 'src-git argon_armygreen https://github.com/Joecaicai/luci-theme-argon_army
 echo 'src-git unblockneteasemusic https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-unblockneteasemusic' >>feeds.conf.default
 # echo 'src-git unblockneteasemusic https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git' >>feeds.conf.default
 
-echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.default
+# echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.default
 # echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.default  应用过滤
 
 # 修改自带主题，删除原主题包
