@@ -32,8 +32,7 @@ echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;lu
 
 
 # echo 'src-git wifidog https://github.com/liudf0716/apfree_wifidog.git' >>feeds.conf.default
-echo 'src-git wifidog https://github.com/wifidog/packages' >>feeds.conf.default
-#https://github.com/wifidog/packages、https://github.com/brcm/openwrt-wifidog-luci-server
+
 
 # 修改自带主题，删除原主题包
 rm -rf package/lean/luci-theme-argon
@@ -56,7 +55,5 @@ echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.def
 # 添加新的主题包 # Add luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
-# argon 的设置
-git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git  package/diy/luci-app-argon-config
 
 
