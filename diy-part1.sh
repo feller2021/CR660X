@@ -26,7 +26,7 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages' >>feeds.conf.default
 echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci' >>feeds.conf.default
 
-echo 'src-git bypass https://github.com/tianiue/luci-app-bypass.git' >>feeds.conf.default
+# echo 'src-git bypass https://github.com/tianiue/luci-app-bypass.git' >>feeds.conf.default
 
 #echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 
@@ -54,12 +54,9 @@ echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.def
 
 
 # 添加新的主题包 # Add luci-theme-argon
-# git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
-
-git clone --depth=1 https://github.com/sansun888/luci-theme-neobird package/lean/luci-theme-neobird
-git clone --depth=1 https://github.com/XXKDB/luci-theme-argon_armygreen package/lean/luci-theme-argon_armygreen
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 # argon 的设置
-# git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git  package/diy/luci-app-argon-config
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git  package/diy/luci-app-argon-config
 
 
