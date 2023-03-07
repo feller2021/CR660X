@@ -52,3 +52,19 @@ uci set network.lan.netmask='255.255.255.0' # 子网掩码
 uci set network.lan.gateway='192.168.1.1'   # 默认网关地址（主路由 IP）
 uci set network.lan.dns='192.168.1.1'  # 默认上游 DNS 地址
 uci commit network
+
+
+
+假设有三台路由器的固件需要编译，比如 K2P、x86_64 软路由、新路由 3。
+
+生成它们的.config文件
+分别将它们重命名为k2p.config、x64.config、d2.config放入本地仓库根目录。
+复制多个 workflow 文件（.github/workflows/build-openwrt.yml）。为了更好的区分可以对它进行重命名，比如k2p.yml、x64.yml、d2.yml。此外第一行name字段也可以进行相应的修改。
+然后分别用上面修改的文件名替换对应 workflow 文件中下面两个位置的.config，不同的机型同样可以使用不同的 DIY 脚本。
+...
+    paths:
+      - '.config'
+...
+        CONFIG_FILE: '.config'
+        DIY_SH: 'diy.sh'
+...
