@@ -30,7 +30,8 @@ echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;lu
 
 #echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 echo 'src-git wiwiz https://github.com/wiwizcom/WiFiPortal.git' >>feeds.conf.default
-echo 'src-git nodogsplashpz https://github.com/tty228/luci-app-nodogsplash.git' >>feeds.conf.default
+# 认证
+# echo 'src-git nodogsplashpz https://github.com/tty228/luci-app-nodogsplash.git' >>feeds.conf.default
 
 # echo 'src-git wifidog https://github.com/liudf0716/apfree_wifidog.git' >>feeds.conf.default
 
