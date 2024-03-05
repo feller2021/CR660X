@@ -55,7 +55,7 @@ echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.def
 
 
 # 添加新的主题包 # Add luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+# git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 
 
