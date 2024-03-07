@@ -25,7 +25,8 @@ echo '我证明diy-part1.sh脚本已经成功运行'
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall_packages https://github.com/huchanghui123/Lienol-openwrt-packages-backup;packages' >>feeds.conf.default
 #echo 'src-git passwall_luci https://github.com/Joelyi/luci-app-passwall;luci' >>feeds.conf.default
-
+echo 'src-git https://github.com/xiaorouji/openwrt-passwall-packages.git;main' >>feeds.conf.default
+echo 'src-git https://github.com/xiaorouji/openwrt-passwall.git;main' >>feeds.conf.default
 #echo 'src-git bypass https://github.com/tianiue/luci-app-bypass.git' >>feeds.conf.default
 
 echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
